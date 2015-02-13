@@ -25,23 +25,28 @@ public class UnityChanMove : MonoBehaviour {
 		anim.SetFloat ("speed", v);
 		anim.SetFloat ("turn", h);
 
-		unityChanPrefab.transform.position += unityChanPrefab.transform.forward * v * Time.deltaTime;
+        unityChanPrefab.transform.position += unityChanPrefab.transform.forward * v * Time.deltaTime;
 		unityChanPrefab.transform.Rotate (0, 100f * h * Time.deltaTime, 0);
+        //unityChanPrefab.rigidbody.AddForce(unityChanPrefab.transform.forward * (v * 1000f) * Time.deltaTime, ForceMode.Acceleration);
 
 		if (Input.GetKeyDown (KeyCode.Space)) {
 			anim.SetTrigger("jumping");
 		}
 
-//		if (v != 0f) {
-//			vec.z+= (v > 0 ? 0.01f : -0.01f);
-//			Debug.Log (vec.x + "," + vec.y + "," + vec.z);
-//			unityChanPrefab.transform.position = vec;
-//		}
-//
-//		float h = Input.GetAxis ("Horizontal");
-//		anim.SetFloat ("turn", h);
-//		if (h != 0f) {
-//			unityChanPrefab.transform.Rotate(0f,(h > 0 ? 1f : -1f),0f);
-//		}
+	    if (v > 0f)
+	    {
+	        if (Input.GetKey(KeyCode.LeftShift))
+	        {
+	            anim.SetBool("dash", true);
+	        }
+	        else if (Input.GetKeyUp(KeyCode.LeftShift))
+	        {
+	            anim.SetBool("dash", false);
+	        }
+	    }
+        else
+        {
+            anim.SetBool("dash", false);
+        }
 	}
 }
