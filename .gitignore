@@ -1,21 +1,20 @@
-obj/
-Library/
-Temp/
+Unity4/Chapter2/obj/
+Unity4/Chapter2/Library/
+Unity4/Chapter2/Temp/
 *.sln
 *.csproj
 *.unityproj
 *.userprefs
-Assets/UnityVS.meta
-Assets/UnityVS/Editor.meta
-Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll
-Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll.meta
-Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll
-Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll.meta
-Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll
-Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll.meta
-Assets/SublimeSocketAsset/*
-
-Assets/SublimeSocketAsset.meta
+Unity4/Chapter2/Assets/UnityVS.meta
+Unity4/Chapter2/Assets/UnityVS/Editor.meta
+Unity4/Chapter2/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll
+Unity4/Chapter2/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll.meta
+Unity4/Chapter2/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll
+Unity4/Chapter2/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll.meta
+Unity4/Chapter2/Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll
+Unity4/Chapter2/Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll.meta
+Unity4/Chapter2/Assets/SublimeSocketAsset/*
+Unity4/Chapter2/Assets/SublimeSocketAsset.meta
 
 
 AndroidApp/app.apk
